@@ -1,0 +1,116 @@
+.frame {
+    background-color: aliceblue;
+    width: 1000px;
+    height: 800px;
+    margin-left: 5px;
+}
+.butSetting {
+    margin-left: 0px;
+    background-color: aliceblue;
+    width: 140px;
+    text-align: center;
+    height: 34px;
+    border: 2px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.topButtons {
+    display: inline-flex;
+    margin-left: -200px;
+}
+.navigateField {
+    display: flex;
+}
+.mainImgFrame {
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.secondImgFrame {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.navigation {
+    margin-top: 2%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.buttonSdlOption {
+    width: 175px;
+    height: 26px;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.topNavigation {
+    display: block;
+    margin-left: 25%;
+}
+.main {
+    display: block;
+}
+.logo {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 170px;
+    height: 80px;
+}
+body {
+    background-color: darkgrey;
+}
+
+@media (max-width: 412px){
+    .frame {
+        width: 400px;
+        height: 860px;
+    }
+    .navigation {
+        margin-top: 0px;
+        margin-left: 0px;
+        display: block;
+    }
+    .main {
+        display: inline-grid;
+    }
+    .topNavigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainImgFrame {
+        margin-left: 18%;
+        margin-top: 10%;
+        width: 250px;
+    }
+    .secondImgFrame {
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 320px;
+    }
+    .navigateField {
+        display: block;
+    }
+    .topButtons {
+        margin-left: -85px;
+    }
+    .buttonSdlOption {
+        width: 25px;
+        height: 26px;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+    .logo {
+        padding-bottom: 30px;
+        margin-left: 50px;
+        width: 170px;
+        height: 80px;
+    }
+    .butSetting {
+        margin-left: -50px;
+        background-color: aliceblue;
+        width: 140px;
+        text-align: center;
+        height: 34px;
+        border: 2px;
+        border-radius: 4px 4px 0px 0px;
+    }
+}
+
