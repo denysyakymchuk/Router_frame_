@@ -17,8 +17,10 @@
         <div class="topNavigation">
           <div style="display: flex;">
             <div class="topButtons">
-              <router-link to="/quick"><p style="width: 175px; margin-right: -50px; text-decoration: none">Quick setup</p></router-link>
-              <router-link to="/settings"><p class="butSetting" style=" text-decoration: none;">Settings</p></router-link>
+              <router-link to="/quick"><p style="width: 175px; text-align: center; text-decoration: none"  :class="{ 'clicked': isClicked }"
+                                          @click="quickClick">Quick setup</p></router-link>
+              <router-link to="/settings"><p class="butSetting" style="text-decoration: none;" :class="{ 'clicked': isClicked_set }"
+                                             @click="settingClick">Settings</p></router-link>
               <select class="buttonSdlOption">
                 <option value="">English</option>
               </select>
@@ -44,12 +46,27 @@ export default {
   name: "MyComponent",
   data() {
     return {
-      msg: 'Hello'
+      isClicked: true,
+      isClicked_set: false,
+    }
+  },
+  methods: {
+    quickClick() {
+      this.isClicked = true
+      this.isClicked_set = false
+    },
+    settingClick() {
+        this.isClicked_set = true;
+        this.isClicked = false;
     }
   }
 }
 </script>
 
 <style scoped>
+.clicked {
+  background-color: aliceblue;
+  height: 50px;
 
+}
 </style>

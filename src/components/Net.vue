@@ -1,5 +1,5 @@
 <template>
-  <h1>Net</h1>v
+  <img src="src/assets/net.png" alt="" width="1000">
 </template>
 
 <script>

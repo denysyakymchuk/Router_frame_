@@ -1,5 +1,5 @@
 <template>
-  <h1>System</h1>
+  <img src="src/assets/system.png" alt="" width="1000">
 </template>
 
 <script>

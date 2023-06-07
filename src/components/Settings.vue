@@ -1,5 +1,5 @@
 <template>
-  <h1>Settings</h1>
+  <img src="src/assets/adv.png" alt="" width="1000">
 </template>
 
 <script>

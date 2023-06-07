@@ -1,5 +1,5 @@
 <template>
-  <h1>Wireless</h1>
+  <img src="src/assets/stat.png" alt="" width="1000">
 </template>
 
 <script>
