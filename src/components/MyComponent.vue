@@ -6,19 +6,19 @@
 
     <div class="navigateField">
       <div class="navigation">
-      <img src="src/assets/Group%2010.png">
-      <img src="src/assets/Group%2011.png">
-      <img src="src/assets/Group%2012.png">
-      <img src="src/assets/Group%2013.png">
-      <img src="src/assets/Group%2014.png">
-    </div>
+        <router-link to="/status"><img src="src/assets/Group%2010.png"></router-link>
+        <router-link to="/wireless"><img src="src/assets/Group%2011.png"></router-link>
+        <router-link to="/net"><img src="src/assets/Group%2012.png"></router-link>
+        <router-link to="/setting"><img src="src/assets/Group%2013.png"></router-link>
+        <router-link to="/system"><img src="src/assets/Group%2014.png"></router-link>
+      </div>
       <div class="frame">
         <div style="background-color: #a9a9a9; height: 50px; width: 100%;">
         <div class="topNavigation">
           <div style="display: flex;">
             <div class="topButtons">
-              <p style="width: 175px">Quick setup</p>
-              <p class="butSetting">Settings</p>
+              <router-link to="/quick"><p style="width: 175px; margin-right: -50px; text-decoration: none">Quick setup</p></router-link>
+              <router-link to="/settings"><p class="butSetting" style=" text-decoration: none;">Settings</p></router-link>
               <select class="buttonSdlOption">
                 <option value="">English</option>
               </select>
@@ -30,10 +30,10 @@
             </div>
           </div>
         </div>
+          <router-view></router-view>
+
         </div>
-        <img src="src/assets/Group%2020.png" class="mainImgFrame">
-        <br>
-        <img src="src/assets/Group%2021.png" class="secondImgFrame">
+
       </div>
     </div>
   </div>
