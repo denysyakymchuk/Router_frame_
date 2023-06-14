@@ -15,24 +15,34 @@
       <div class="frame">
         <div style="background-color: #a9a9a9; height: 50px; width: 100%;">
         <div class="topNavigation">
-          <div style="display: flex;">
+          <div class="flex">
             <div class="topButtons">
-              <router-link to="/quick"><p style="width: 175px; text-align: center; text-decoration: none"  :class="{ 'clicked': isClicked }"
+              <div class="quick">
+              <router-link to="/quick" style="text-decoration: none;"><p style=" text-align: center; text-decoration: none; color: black;"  :class="{ 'clicked': isClicked }"
                                           @click="quickClick">Quick setup</p></router-link>
-              <router-link to="/settings"><p class="butSetting" style="text-decoration: none;" :class="{ 'clicked': isClicked_set }"
+              </div>
+              <div class="settings">
+              <router-link to="/settings" style="text-decoration: none;"><p class="butSetting" style="text-decoration: none; color: black" :class="{ 'clicked': isClicked_set }"
                                              @click="settingClick">Settings</p></router-link>
+              </div>
+
+            </div>
+            <div class="star">
+
               <select class="buttonSdlOption">
                 <option value="">English</option>
-              </select>
-            </div>
-            <div style="display: flex; margin-left: 10%;">
-              <img src="src/assets/Group%2016.png" width="33" height="44">
-              <img src="src/assets/Group%2017.png" width="33" height="44" style="margin-top: 8px;">
-              <img src="src/assets/Group%2018.png" width="33" height="44" style="margin-top: 10px; margin-left: 2px;">
+            </select>
+              <div class="btns">
+                <img src="src/assets/Group%2016.png" width="33" height="44">
+                <img src="src/assets/Group%2017.png" width="33" height="44" style="margin-top: 8px;">
+                <img src="src/assets/Group%2018.png" width="33" height="44" style="margin-top: 10px; margin-left: 2px;">
+              </div>
             </div>
           </div>
         </div>
-          <router-view></router-view>
+          <div align="center">
+            <router-view></router-view>
+          </div>
 
         </div>
 
