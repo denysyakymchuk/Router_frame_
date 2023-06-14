@@ -75,8 +75,9 @@ export default {
 
 <style scoped>
 .clicked {
-  background-color: aliceblue;
-  height: 50px;
+  background-color: whitesmoke;
+  height: 34px;
+  border-radius: 5px 5px 0px 0px;
 
 }
 </style>
